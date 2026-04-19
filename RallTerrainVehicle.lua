@@ -181,7 +181,6 @@ local function CreateBar(name)
     addon.db.profile.anchorY = y
   end)
 
-
   bars[name] = bar
   return bar
 end

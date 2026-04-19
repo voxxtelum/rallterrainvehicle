@@ -1,6 +1,5 @@
 local addon = LibStub("AceAddon-3.0"):GetAddon("RallTerrainVehicle")
 local LSM = LibStub("LibSharedMedia-3.0")
-
 local options = {
   name = "RallTerrainVehicle",
   type = "group",
@@ -177,5 +176,4 @@ local options = {
   },
 }
 
--- 🔑 IMPORTANT: make it global so MiningTimers.lua can access it
 _G.RallTerrainVehicleOptions = options

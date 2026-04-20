@@ -79,7 +79,11 @@ function addon:UNIT_SPELLCAST_SUCCEEDED(event, unit, _, spellID)
   local zoneName
 
   if subzone and subzone ~= "" and not self.db.profile.excludedSubzones[subzone] then
-    zoneName = subzone
+    if subzone == "Pestilent Scar" then
+      zoneName = "LHC"
+    else
+      zoneName = subzone
+    end
   else
     local mapID = C_Map.GetBestMapForUnit("player")
     local pos = mapID and C_Map.GetPlayerMapPosition(mapID, "player")
